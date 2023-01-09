@@ -51,6 +51,14 @@
       "extends": [
         "schedule:weekly"
       ]
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "groupName": "docker dependencies",
+      "groupSlug": "docker",
+      "extends": [
+        "schedule:weekly"
+      ]
     }
   ],
   "patch": {
