@@ -1,0 +1,63 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "packageRules": [
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchManagers": [
+        "cargo"
+      ],
+      "matchCurrentVersion": ">=0.1.0",
+      "patch": {
+        "enabled": false
+      },
+      "extends": [
+        "schedule:weekly"
+      ]
+    },
+    {
+      "groupName": "all dependencies",
+      "groupSlug": "all",
+      "matchManagers": [
+        "cargo"
+      ],
+      "matchCurrentVersion": ">=1.0.0",
+      "patch": {
+        "enabled": false
+      },
+      "minor": {
+        "enabled": false
+      },
+      "extends": [
+        "schedule:weekly"
+      ]
+    },
+    {
+      "groupName": "all actions",
+      "groupSlug": "all-actions",
+      "matchManagers": [
+        "github-actions"
+      ],
+      "extends": [
+        "schedule:weekly"
+      ]
+    },
+    {
+      "groupName": "submodules",
+      "groupSlug": "submodule",
+      "matchManagers": [
+        "git-submodules"
+      ],
+      "extends": [
+        "schedule:weekly"
+      ]
+    }
+  ],
+  "patch": {
+    "enabled": false
+  },
+  "separateMajorMinor": false,
+  "git-submodules": {
+    "enabled": true
+  }
+}
