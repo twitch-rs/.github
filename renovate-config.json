@@ -7,27 +7,6 @@
       "matchManagers": [
         "cargo"
       ],
-      "matchCurrentVersion": ">=0.1.0",
-      "patch": {
-        "enabled": false
-      },
-      "extends": [
-        "schedule:weekly"
-      ]
-    },
-    {
-      "groupName": "all dependencies",
-      "groupSlug": "all",
-      "matchManagers": [
-        "cargo"
-      ],
-      "matchCurrentVersion": ">=1.0.0",
-      "patch": {
-        "enabled": false
-      },
-      "minor": {
-        "enabled": false
-      },
       "extends": [
         "schedule:weekly"
       ]
