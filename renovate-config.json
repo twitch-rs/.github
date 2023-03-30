@@ -40,9 +40,6 @@
       ]
     }
   ],
-  "patch": {
-    "enabled": false
-  },
   "cloneSubmodules": true,
   "separateMajorMinor": false,
   "git-submodules": {
