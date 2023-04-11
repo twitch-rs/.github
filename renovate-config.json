@@ -30,6 +30,15 @@
       ]
     }
   ],
+  "patch": {
+    "enabled": false
+  },
+  "major": {
+    "enabled": false
+  },
+  "minor": {
+    "enabled": false
+  },
   "cloneSubmodules": true,
   "separateMajorMinor": false,
   "git-submodules": {
