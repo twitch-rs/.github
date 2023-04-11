@@ -2,16 +2,6 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "packageRules": [
     {
-      "groupName": "all dependencies",
-      "groupSlug": "all",
-      "matchManagers": [
-        "cargo"
-      ],
-      "extends": [
-        "schedule:weekly"
-      ]
-    },
-    {
       "groupName": "all actions",
       "groupSlug": "all-actions",
       "matchManagers": [
