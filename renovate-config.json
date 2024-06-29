@@ -4,40 +4,32 @@
     {
       "groupName": "all actions",
       "groupSlug": "all-actions",
-      "matchManagers": [
-        "github-actions"
-      ],
-      "extends": [
-        "schedule:weekly"
-      ]
+      "matchManagers": ["github-actions"],
+      "extends": ["schedule:weekly"]
     },
     {
       "groupName": "submodules",
       "groupSlug": "submodule",
-      "matchManagers": [
-        "git-submodules"
-      ],
-      "extends": [
-        "schedule:weekly"
-      ]
+      "matchManagers": ["git-submodules"],
+      "extends": ["schedule:weekly"]
     },
     {
       "matchManagers": ["dockerfile"],
       "groupName": "docker dependencies",
       "groupSlug": "docker",
-      "extends": [
-        "schedule:weekly"
-      ]
+      "extends": ["schedule:weekly"]
+    },
+    {
+      "groupName": "cargo",
+      "groupSlug": "cargo",
+      "matchManagers": ["cargo"],
+      "extends": ["schedule:weekly"]
     }
   ],
   "patch": {
-    "enabled": false
-  },
-  "major": {
-    "enabled": false
-  },
-  "minor": {
-    "enabled": false
+    "cargo": {
+      "enabled": false
+    }
   },
   "cloneSubmodules": true,
   "separateMajorMinor": false,
