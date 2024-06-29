@@ -8,12 +8,6 @@
       "extends": ["schedule:weekly"]
     },
     {
-      "groupName": "submodules",
-      "groupSlug": "submodule",
-      "matchManagers": ["git-submodules"],
-      "extends": ["schedule:weekly"]
-    },
-    {
       "matchManagers": ["dockerfile"],
       "groupName": "docker dependencies",
       "groupSlug": "docker",
@@ -34,6 +28,6 @@
   "cloneSubmodules": true,
   "separateMajorMinor": false,
   "git-submodules": {
-    "enabled": true
+    "enabled": false
   }
 }
