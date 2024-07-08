@@ -8,12 +8,6 @@
       "extends": ["schedule:weekly"]
     },
     {
-      "matchManagers": ["dockerfile"],
-      "groupName": "docker dependencies",
-      "groupSlug": "docker",
-      "extends": ["schedule:weekly"]
-    },
-    {
       "groupName": "rust dependencies",
       "groupSlug": "cargo",
       "matchManagers": ["cargo"],
@@ -22,11 +16,14 @@
     }
   ],
   "patch": {
-    "enabledManagers": ["github-actions", "dockerfile"]
+    "enabled": false
   },
   "cloneSubmodules": true,
   "separateMajorMinor": false,
   "git-submodules": {
+    "enabled": false
+  },
+  "dockerfile": {
     "enabled": false
   }
 }
