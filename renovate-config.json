@@ -25,5 +25,8 @@
   },
   "dockerfile": {
     "enabled": false
+  },
+  "cargo": {
+    "enabled": false
   }
 }
